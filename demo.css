@@ -1,0 +1,10 @@
+.box{
+    width: 200px;
+    margin: 100px auto;
+}
+input[type="text"] {
+    width: 100px;
+}
+button {
+    float: right;
+}
