@@ -1,18 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>厄斐琉斯切刀</title>
-    <link rel="stylesheet" href="./demo.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>厄斐琉斯小助手</title>
+  <link rel="stylesheet" href="./demo.css">
 </head>
 <body>
-    <div class="box">
-        <label>当前刀序<input id="now" type="text" value="234"></label><br>
-        <label>目标刀序<input id="target" type="text" value="143"></label>
-        <div><button id="calc">计算</button></div>
+  <div class="box">
+    <h1>厄斐琉斯小助手</h1>
+    <div class="now">
+      <h3>当前刀序：</h3>
+      <button id="clearNow">清空</button>
+      <ul class="input">
+        <li>当前持有的两把武器：<span class=" active">坠明</span><span>坠明</span></li>
+        <li>下一把武器：<span>坠明</span></li>
+        <li>下下把武器：<span>坠明</span></li>
+        <li>上一把使用的武器：<span>坠明</span></li>
+      </ul>
     </div>
-    <script type="text/javascript" src="./demo.js"></script>
+    <div id="target">
+      <h3>目标刀序：</h3>
+      <button id="clearTarget">清空</button>
+      <ul class="input">
+        <li>需要持有的两把武器：<span>坠明</span><span>坠明</span></li>
+        <li>下一把武器：<span>坠明</span></li>
+        <li>下下把武器：<span>坠明</span></li>
+        <li>上一把使用的武器：<span>坠明</span></li>
+      </ul>
+      <ul class="select">
+        <li><img src="./imgs/Aphelios_Calibrum.png" alt="通碧" title="通碧"></li>
+        <li><img src="./imgs/Aphelios_Severum.png" alt="断魄" title="断魄"></li>
+        <li><img src="./imgs/Aphelios_Gravitum.png" alt="坠明" title="坠明"></li>
+        <li><img src="./imgs/Aphelios_Infernum.png" alt="荧焰" title="荧焰"></li>
+        <li><img src="./imgs/Aphelios_Crescendum.png" alt="折镜" title="折镜"></li>
+        <!--<li><img src="" alt="通碧" title="通碧"></li>-->
+        <!--<li><img src="" alt="断魄" title="断魄"></li>-->
+        <!--<li><img src="" alt="坠明" title="坠明"></li>-->
+        <!--<li><img src="" alt="荧焰" title="荧焰"></li>-->
+        <!--<li><img src="" alt="折镜" title="折镜"></li>-->
+      </ul>
+    </div>
+    <div>
+      <button id="calc">计算</button>
+    </div>
+    <ul id="result"></ul>
+  </div>
+  <script type="text/javascript" src="./demo.js"></script>
 </body>
 </html>
