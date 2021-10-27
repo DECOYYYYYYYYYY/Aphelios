@@ -12,23 +12,27 @@
     <h1>厄斐琉斯小助手</h1>
     <div class="now">
       <h3>当前刀序：</h3>
+      <button id="initial">初始</button>
       <button id="clearNow">清空</button>
       <ul class="input">
-        <li>当前持有的两把武器：<span class=" active">坠明</span><span>坠明</span></li>
-        <li>下一把武器：<span>坠明</span></li>
-        <li>下下把武器：<span>坠明</span></li>
-        <li>上一把使用的武器：<span>坠明</span></li>
+        <li>当前持有的两把武器：<span class=" active">&nbsp;</span><span>&nbsp;</span></li>
+        <li>下一把武器：<span>&nbsp;</span></li>
+        <li>下下把武器：<span>&nbsp;</span></li>
+        <li>上一把使用的武器：<span>&nbsp;</span></li>
       </ul>
     </div>
     <div id="target">
       <h3>目标刀序：</h3>
+      <button id="addSave">保存</button>
       <button id="clearTarget">清空</button>
       <ul class="input">
-        <li>需要持有的两把武器：<span>坠明</span><span>坠明</span></li>
-        <li>下一把武器：<span>坠明</span></li>
-        <li>下下把武器：<span>坠明</span></li>
-        <li>上一把使用的武器：<span>坠明</span></li>
+        <li>需要持有的两把武器：<span>&nbsp;</span><span>&nbsp;</span></li>
+        <li>下一把武器：<span>&nbsp;</span></li>
+        <li>下下把武器：<span>&nbsp;</span></li>
+        <li>上一把使用的武器：<span>&nbsp;</span></li>
       </ul>
+    </div>
+    <div>
       <ul class="select">
         <li><img src="./imgs/Aphelios_Calibrum.png" alt="通碧" title="通碧"></li>
         <li><img src="./imgs/Aphelios_Severum.png" alt="断魄" title="断魄"></li>
@@ -41,11 +45,12 @@
         <!--<li><img src="" alt="荧焰" title="荧焰"></li>-->
         <!--<li><img src="" alt="折镜" title="折镜"></li>-->
       </ul>
-    </div>
-    <div>
+      <ul id="save"></ul>
       <button id="calc">计算</button>
     </div>
-    <ul id="result"></ul>
+    <!--todo 完善列表标题（推荐列表无内容则隐藏）-->
+    <ul class="resultList" id="shortest"></ul>
+    <ul class="resultList" id="recommend"></ul>
   </div>
   <script type="text/javascript" src="./demo.js"></script>
 </body>

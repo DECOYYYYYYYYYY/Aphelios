@@ -39,12 +39,12 @@ h1 {
   font-weight: 700;
   cursor: pointer;
   border-bottom: solid 2px black;
-  color: transparent;
+  /*color: transparent;*/
 }
 
-.input span.show {
-  color: black;
-}
+/*.input span.show {*/
+/*  color: black;*/
+/*}*/
 
 .input span.active {
   background-color: #b2e9fa;
