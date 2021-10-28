@@ -5,15 +5,17 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>厄斐琉斯小助手</title>
-  <link rel="stylesheet" href="./demo.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <div class="box">
     <h1>厄斐琉斯小助手</h1>
-    <div class="now">
-      <h3>当前刀序：</h3>
-      <button id="initial">初始</button>
-      <button id="clearNow">清空</button>
+    <div>
+      <div class="subtitle clearfix">
+        <h3>当前刀序</h3>
+        <button id="clearNow" class="danger">清空</button>
+        <button id="initial">初始</button>
+      </div>
       <ul class="input">
         <li>当前持有的两把武器：<span class=" active">&nbsp;</span><span>&nbsp;</span></li>
         <li>下一把武器：<span>&nbsp;</span></li>
@@ -21,10 +23,12 @@
         <li>上一把使用的武器：<span>&nbsp;</span></li>
       </ul>
     </div>
-    <div id="target">
-      <h3>目标刀序：</h3>
-      <button id="addSave">保存</button>
-      <button id="clearTarget">清空</button>
+    <div>
+      <div class="subtitle clearfix">
+        <h3>目标刀序</h3>
+        <button id="clearTarget" class="danger">清空</button>
+        <button id="addSave">保存</button>
+      </div>
       <ul class="input">
         <li>需要持有的两把武器：<span>&nbsp;</span><span>&nbsp;</span></li>
         <li>下一把武器：<span>&nbsp;</span></li>
@@ -45,13 +49,25 @@
         <!--<li><img src="" alt="荧焰" title="荧焰"></li>-->
         <!--<li><img src="" alt="折镜" title="折镜"></li>-->
       </ul>
-      <ul id="save"></ul>
-      <button id="calc">计算</button>
+      <ul class="clearfix" id="save"></ul>
     </div>
-    <!--todo 完善列表标题（推荐列表无内容则隐藏）-->
-    <ul class="resultList" id="shortest"></ul>
-    <ul class="resultList" id="recommend"></ul>
+    <div>
+      <div class="resultTitle subtitle clearfix">
+        <div><h3>结果</h3><span>按如下顺序使用武器</span></div>
+        <button id="calc">计算</button>
+      </div>
+      <div id="resultBox">
+        <div class="resultList">
+          <h4 title="不会长时间持有同一把武器">推荐路线</h4>
+          <ul id="recommend"></ul>
+        </div>
+        <div class="resultList">
+          <h4>最短路线</h4>
+          <ul id="shortest"></ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <script type="text/javascript" src="./demo.js"></script>
+  <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
